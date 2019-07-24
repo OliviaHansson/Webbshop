@@ -1,0 +1,24 @@
+<h1>MOVIE TAJM</h1><br>
+<main>
+  <h2>Your Cart</h2>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th></th>
+      <th>Amount</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor='let itemInCart of movies'>
+      <td><img src="{{itemInCart.movie.imageUrl}}" alt="{{itemInCart.movie.name}}" class="imageInCart"></td>
+      <td><p>{{itemInCart.movie.name}}</p></td>
+      <td>
+        <button (click)="addMovieToCart(itemInCart.movie)"> + </button>
+        <button (click)="deleteMovieFromCart(itemInCart.movie)"> - </button>
+      </td>
+      <td>{{itemInCart.amount}}</td>
+      <td><p>{{itemInCart.totalPrice}}kr</p></td>
+    </tr>
+  </table>
+  <h2>Your Details</h2>
+  <app-customer-details-form [cart]='customerForm' (placeOrder)="onPlacingOrder($event)"></app-customer-details-form>
+</main>

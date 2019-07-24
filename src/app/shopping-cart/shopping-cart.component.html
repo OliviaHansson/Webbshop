@@ -1,0 +1,21 @@
+<div id="dropDown">
+  <a (click)='toggleDropDown()' class="show"><i class="fas fa-shopping-basket"></i></a>
+  <div class="dropDownCart" id="dropDownCart">
+    <div *ngFor='let cartItem of cart' class="row">
+      <div class="colLeft">
+        <img src="{{cartItem.movie.imageUrl}}" alt="{{cartItem.movie.name}}">
+      </div>
+      <div class="colRight">
+        <p>{{ cartItem.movie.name }}</p>
+        <p> Price: {{cartItem.movie.price}}</p>
+        <p> Amount: {{ cartItem.amount}}</p>
+        <p> Sum: {{ cartItem.totalPrice}}</p>
+        <button (click)="addMovieToCart(cartItem.movie)"> + </button>
+        <button (click)="deleteMovieFromCart(cartItem.movie)"> - </button>
+      </div>
+    </div>
+    <div>
+      <button routerLink='/checkout' class="btnCheckOut">GO TO CHECKOUT</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="orders">
+    <h2>Orders</h2>
+    <table>
+        <tr>
+            <th>Order number:</th>
+            <th>Customer:</th>
+            <th>Order Created:</th>
+            <th>Payment Method:</th>
+            <th>Order Summary:</th>
+            <th></th>
+        </tr>
+        <tr *ngFor='let order of ordersList'>
+            <td><p>{{order.id}}</p></td>
+            <td><p>{{order.createdBy}}</p></td>
+            <td><p>{{order.created}}</p></td>
+            <td><p>{{order.paymentMethod}}</p></td>
+            <td><p>{{order.totalPrice}}</p></td>
+            <td>
+                <button (click)="delete(order.id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>

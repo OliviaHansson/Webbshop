@@ -1,0 +1,59 @@
+@font-face {
+    font-family: marqueemoon;
+    src: url(../HELLODENVERDISPLAYREGULAR_v1.6.otf);
+}
+h1  {
+    font-family: marqueemoon;
+    text-align: center;
+    font-size: 5rem;
+    color: #ffd8d8;
+    margin: 0;
+    text-shadow: 
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b; 
+}
+@media screen and (min-width: 768px) {
+    main {
+        width: 80%;
+    }
+    .imageInCart {
+        height: 120px;
+        width: 80px;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    main {
+        width: 60%;
+    }
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #f25757;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main {
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+table {
+    margin: 0 auto;
+    width: 100%;
+}
+.imageInCart {
+    height: 150px;
+    width: 100px;
+}
+p {
+    display: block;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,21 @@
+<div>
+    <img (click)="openModal(this.product)" src={{product.imageUrl}} alt={{product.name}} class="movie-poster" onerror="this.style.display='none'">
+</div>
+<div id="movieModal{{this.product.id}}" class="movieModal">
+    <div id="modalContent" class="row">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <div class="colLeft">
+            <img src={{product.imageUrl}} alt={{product.name}} class="movie-poster-modal" onerror="this.style.display='none'">
+        </div>
+        <div class="colRight">
+            <h2 class="movieTitle"> {{ product.name }} </h2>
+            <p> Year: {{ product.year }} </p><br>
+            <p class="movieDescr"> {{ product.description }} </p><br>
+            <div class="row">
+                <p> Price: {{ product.price }}kr </p><br>
+                <button class="btnAdd" (click)="addMovieToCart(product)">ADD</button>
+            </div>
+        </div>
+    </div>
+</div>
+

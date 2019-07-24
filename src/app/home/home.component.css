@@ -1,0 +1,39 @@
+.flexParent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.selection {
+  text-align: center;
+}
+.select {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+}
+button {
+  border-color: none;
+  border-style: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font: 800;
+  font-size: 2.5em;
+  font-family: marqueemoon;
+  color: #ffd8d8;
+  background-color: #f25757;
+}
+button:hover {
+  background-color: #ffd8d8;
+  text-shadow: 
+    .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+    .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+    .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+    .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b; 
+}
+@media screen and (min-width: 768px) {
+  .select {
+    width: 100px;
+  }
+}

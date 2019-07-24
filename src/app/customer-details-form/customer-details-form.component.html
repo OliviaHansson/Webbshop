@@ -1,0 +1,17 @@
+<form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="customerForm">
+  <label for="name">First- and Lastname</label><br>
+  <input type="text" name="name" id="name" formControlName="name" placeholder="Your name..."><br>
+  <label for="email">E-mail</label><br>
+  <input type="text" name="email" id="email" formControlName="email"><br>
+  <label for="phoneNumber">Phone number</label><br>
+  <input type="text" name="phoneNumber" id="phoneNumber" formControlName="phoneNumber"><br>
+  <label for="address">Address</label><br>
+  <input type="text" name="address" id="address" formControlName="address"><br>
+  <label for="zip">Zip</label><br>
+  <input type="text" name="zip" id="zip" formControlName="zip"><br>
+  <label for="state">State</label><br>
+  <input type="text" name="zip" id="state" formControlName="state"><br>
+  <div class="placeOrderBtn">
+    <button type="submit" [disabled]="!customerForm.valid">Place Order</button>
+  </div>
+</form>

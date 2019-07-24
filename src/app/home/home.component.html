@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="selection">
+  <input type="text" #txtSearch (keyup)='search(txtSearch.value)'>
+  <button (click)='search(txtSearch.value)'>GO</button>
+  <select class="select" [(ngModel)]="selectedCategory" onchange="handleClick()">
+    <option *ngFor='let category of categories' value="{{category.id}}">
+      {{category.name}}
+    </option>
+  </select>
+</div>
+<h2>{{selectedCategory}}</h2>
+<div class="flexParent">
+  <div *ngFor='let product of products' class="flexParent">
+      <app-print-products [product]='product'></app-print-products>
+  </div>
+</div>

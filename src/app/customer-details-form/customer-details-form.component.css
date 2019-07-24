@@ -1,0 +1,52 @@
+h2 {
+    color: red;
+}
+.customerForm {
+    margin: 0 auto;
+    width: 90%;
+}
+.customerForm input {
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 8px;
+    border-style: solid;
+    display: inline-block;
+    height: 30px;
+}
+input [type=text] {
+    outline: none;
+}
+.placeOrderBtn {
+    width: 60%;
+    margin: 0 auto;
+}
+button {
+    height: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: black;
+    font-family: 'Fjalla One', sans-serif;
+    color: #f25757;
+    font-size: 1.2em;
+}
+button:hover {
+    background-color: #f25757;
+    color: black;
+}
+@media screen and (min-width: 768px) {
+    .customerForm {
+        width: 70%;
+    }
+    .customerForm input {
+        margin: 20px 0px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .customerForm {
+        width: 80%;
+    }
+    .customerForm input {
+        margin: 15px 0px;
+    }
+}
