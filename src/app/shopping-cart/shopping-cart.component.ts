@@ -23,7 +23,7 @@ export class ShoppingCartComponent implements OnInit {
   the cart symbol. It toggles the cart for easily showing/hiding it. And adds or
   removes product that was once added to the cart.
   */
- 
+
   ngOnInit() {
   this.cart = this.shoppingCart.getCart();
   }
@@ -37,4 +37,4 @@ export class ShoppingCartComponent implements OnInit {
   deleteMovieFromCart(movieToRemove: IProduct) {
     this.shoppingCart.delete(movieToRemove);
   }
-}
+}//hej
