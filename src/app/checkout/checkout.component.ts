@@ -14,9 +14,9 @@ export class CheckoutComponent implements OnInit {
   
   /*
   Checkout page. Getting the cart saved in local storage. 
-  Making it possible to again add or delete products in cart. 
+  Making it possible to, again, add or delete products in cart. 
   When finished it saved the products to orderRows and saves 
-  the orderRows with information from the customerDetailsForm. And the time the order was amde 
+  the orderRows with information from the customerDetailsForm. And the time the order was made 
   Saving all information to order.
   */
 
