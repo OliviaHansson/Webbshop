@@ -37,4 +37,4 @@ export class ShoppingCartComponent implements OnInit {
   deleteMovieFromCart(movieToRemove: IProduct) {
     this.shoppingCart.delete(movieToRemove);
   }
-}//hej
+}
