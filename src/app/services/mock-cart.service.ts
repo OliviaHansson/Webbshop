@@ -19,4 +19,4 @@ export class MockCartService {
     return of(this.mockCartList);
   }
 }
-// Here's the mockdata used for testing functions of the shopping cart.
+// Here's the mock data used for testing methods of the shopping cart.
